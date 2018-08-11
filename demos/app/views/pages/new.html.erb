@@ -1,0 +1,15 @@
+<h2>Registered users list</h2>
+<table>
+<tr>
+<th>Id</th>
+<th>Email</th>
+<th>Image</th>
+</tr>
+<% @user.each do |data| %>
+<tr>
+ <td><%= data.id %></td>  
+ <td><%= data.email %></td>
+    <td><%= image_tag data.image.thumb %></td>
+  </tr>
+  <% end %>  
+</table>
